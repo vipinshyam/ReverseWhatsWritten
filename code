@@ -2,13 +2,13 @@
 something = input("Write something:")
 
 #count the number of objects in what the user has input
-count_of_alphabets = len(something)
+count_of_objects = len(something)
 
 #passing the same count into another variable, so that there is possibility to use one
 #for controlling the loop (count_of_alphabets) & the other (total_char) 
 #for identifying object by object downwards
 
-total_char = count_of_alphabets
+total_objects = count_of_objects
 
 #variable initialized to zero. This variable will be later used to accept the reversed objects one by one
 initial_count = 0
@@ -18,15 +18,15 @@ reverse =[]
 
 #control loop starts here
 
-while initial_count < count_of_alphabets:
+while initial_count < count_of_objects:
     
     #the heart / logic. The minus one is used to correct the number 
-    #derived from the len function which counts from 1 instead of 0
+    #derived from the len function which counts starting from 1 instead of 0
     
-    reverse.append(something[total_char-1])
+    reverse.append(something[total_objects-1])
     
     #decrease to enable the reverse movement
-    total_char -= 1
+    total_objects -= 1
     
     #increase this variable to proceed forward after accepting the reversed objects
     initial_count += 1
